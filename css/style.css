@@ -1,0 +1,89 @@
+@import "./layout.css";
+@import "./card.css";
+@import "./post.css";
+@import "./variables.css";
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: var(--secondary-font);
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--primary-font);
+}
+
+/* SITE HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--main-background);
+}
+
+header:first-child {
+    padding-left: 2em;
+}
+
+.site-name,
+.nav-list a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    min-width: 20vw;
+    justify-content: center;
+}
+
+.nav-list a {
+    color: var(--dark-text);
+    font-weight: 700;
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
+
+.nav-item {
+    padding: .5em 1em;
+    margin: .2em;
+    font-size: 1.1em;
+    border-radius: 0;
+}
+
+/* SITE FOOTER */
+
+footer {
+    background: var(--main-background);
+    border-radius: 0;
+    padding: 1.5em;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+footer span {
+    text-decoration: line-through;
+    color: #f00;
+}
+
+/* SOCIAL ICONS */
+
+.social-icons {
+    margin: 0 0 0.5em 0;
+    font-size: 1em;
+}
+
+.social-icons a {
+    color: #ccc;
+    margin: 0.1em
+}
+

@@ -1,0 +1,86 @@
+/* LAYOUT FOR CARDS ON FRONT-PAGE */
+
+main {
+    margin: 2em 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.site-container {
+    width: 100vw;
+    margin: 0 auto; 
+}
+
+
+/* LAYOUT FOR GALLERY IN POSTS */
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 0) and (max-width: 360px) {
+
+    header {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .nav-list {
+        flex-wrap: wrap;
+    }
+    .nav-item {
+        padding: .1em;
+        margin: .1em;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    .site-container {
+        width: 90vw;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .site-container {
+        width: 90vw;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1201px) {
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .site-container {
+        width: 90vw;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+

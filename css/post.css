@@ -1,0 +1,41 @@
+.post-main {
+    display: block;
+}
+
+.post-content {
+    width: 80%;
+    margin: 2em auto 4em auto;
+}
+
+.post-content figcaption {
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+.post-meta {
+    text-transform: uppercase;
+    font-size: .8em;
+    color: #777;
+}
+
+.post-meta span {
+    font-weight: 700;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.first-paragraph {
+    font-weight: 700;
+}
+
+blockquote {
+    font-style: italic;
+    padding: .5em 1em;
+    border-left: 1px solid var(--dark-text);
+}
+
+q {
+    font-weight: 700;
+}
